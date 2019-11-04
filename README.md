@@ -1,4 +1,4 @@
-=== Plugin Name ===
+# Custom Taxonomies for Blocks
 Contributors: taupecat, taupecatstudios
 Tags: custom-taxonomies, gutenberg, block-editor
 Requires at least: 4.7
@@ -10,7 +10,7 @@ License URI: https://opensource.org/licenses/MIT
 
 WordPress plugin to convert older custom taxonomies so they can be used in the WordPress blocks interface (a.k.a. Gutenberg).
 
-== Description ==
+## Description
 
 Custom taxonomies that were developed prior to the release of WordPress 5.0 (the Gutenberg release) may not be compatible with the WordPress block editor.
 
@@ -18,28 +18,28 @@ Custom taxonomies require that the "show_in_rest" property be set to "true" in o
 
 This plugin will take any custom taxonomy where the "show_in_rest" feature is set to "false" and change it to "true". It will _not_ add any additional REST properties, such as "rest_base" or "rest_controller_class". If you need those properties set for any reason, you will need to update your custom taxonomy where it is being registered.
 
-== Installation ==
+## Installation
 
 1. Upload the plugin to the `/wp-content/plugins` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
-== Frequently Asked Questions ==
+## Frequently Asked Questions
 
-= What does this plugin _do_, exactly? =
+### What does this plugin _do_, exactly?
 
 This plugin will go through _every_ registered custom taxonomy (any taxonomy that isn't registered in `wp-includes/taxonomy.php`) and change the "show_in_rest" property from false to true. Doing so will enable older custom taxonomies to be accessed in the WordPress block editor.
 
-= Are there any settings for this plugin? =
+### Are there any settings for this plugin?
 
 Not at present, but a later version of this plugin will allow site administrators to choose which custom taxonomies they want to enable for the block editor interface.
 
-= Does this plugin work with the Classic Editor plugin? =
+### Does this plugin work with the Classic Editor plugin?
 
 Since the [Classic Editor](https://wordpress.org/plugins/classic-editor/) plugin disables the WordPress block editor completely, there is no need for this plugin if Classic Editor is installed and activated.
 
 If Classic Editor is installed and activated, this plugin will not run.
 
-== Changelog ==
+## Changelog
 
-= 1.0 =
+### 1.0
 * Initial submission to the WordPress plugin repository. Sets _all_ custom taxonomies where "show_in_rest" is false to true so that they are compatible with the WordPress 5.* block editor interface.
