@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Custom Taxonomies for Blocks ===
 Contributors: taupecat, taupecatstudios
 Tags: custom-taxonomies, gutenberg, block-editor
 Requires at least: 4.7
